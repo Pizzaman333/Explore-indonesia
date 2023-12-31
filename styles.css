@@ -1,6 +1,8 @@
 :root {
   --title-color: rgba(255, 255, 255, 1);
   --red-color: rgba(221, 34, 66, 1);
+  --hero-text-color: rgba(147, 147, 147, 1);
+  --text-color: rgba(224, 224, 224, 1);
 }
 
 body {
@@ -35,8 +37,6 @@ body {
 }
 
 .logo {
-  width: 171px;
-  height: 69px;
   fill: var(--title-color);
 }
 
@@ -54,14 +54,10 @@ body {
 }
 
 .search-icon {
-  width: 24px;
-  height: 24px;
   fill: var(--title-color);
 }
 
 .menu-icon {
-  width: 24px;
-  height: 24px;
   fill: var(--title-color);
 }
 
@@ -170,12 +166,12 @@ padding-top: 41px;
 padding-left: 71px;
 }
 
-.articles-wrap {
+.hero-articles-wrap {
   display: flex;
   justify-content: flex-end;
 }
 
-.article-number {
+.hero-article-number {
   color: var(--red-color);
   font-family: Roboto;
   font-size: 16px;
@@ -184,15 +180,15 @@ padding-left: 71px;
   margin-bottom: 14px;
 }
 
-.article-title {
+.hero-article-title {
   color: var(--title-color);
   font-size: 26.409px;
   font-weight: 700;
   line-height: 155.556%;
 }
 
-.article-text {
-  color: #939393;
+.hero-article-text {
+  color: var(--hero-text-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 155.556%;
@@ -203,4 +199,73 @@ padding-left: 71px;
 .hero-image {
   width: 346px;
 height: 210px;
+}
+
+/* locations */
+
+.locations {
+  height: 1624px;
+  /* background-color: #010A20; */
+  background-image: url(./images/locations-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.locations-image {
+  width: 630px;
+height: 460px;
+border-radius: 10px;
+}
+
+.locations-title {
+  color: var(--title-color);
+font-size: 42px;
+font-weight: 700;
+line-height: 119.048%;
+max-width: 480px;
+margin-top: 58px;
+margin-bottom: 20px;
+}
+
+.locations-text {
+  color: var(--text-color);
+font-size: 18px;
+font-weight: 400;
+line-height: 155.556%;
+letter-spacing: 0.18px;
+width: 408px;
+margin-bottom: 32px;
+}
+
+.locations-button {
+  color: var(--text-color);
+text-align: center;
+font-size: 18px;
+font-weight: 700;
+line-height: 150%;
+border-radius: 32px;
+background: var(--red-color);
+width: 180px;
+padding: 16px 24px;
+}
+
+.locations-article {
+  justify-content: center;
+  display: flex;
+  gap: 130px;
+  padding-top: 207px;
+}
+
+.locations-article:last-child {
+  padding-left: 44px;
+}
+
+/* secrets */
+
+.secrets-title {
+  color: #010A20  ;
+text-align: center;
+font-size: 50px;
+font-weight: 700;
+line-height: 150%;
 }

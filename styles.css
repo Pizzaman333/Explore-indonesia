@@ -1,8 +1,9 @@
 :root {
   --title-color: rgba(255, 255, 255, 1);
-  --red-color: rgba(221, 34, 66, 1);
+  --red-color: #dd2242;
   --hero-text-color: rgba(147, 147, 147, 1);
   --text-color: rgba(224, 224, 224, 1);
+  --dark-color: #010a20;
 }
 
 body {
@@ -428,7 +429,8 @@ body {
 /* expect */
 
 .expect {
-  background-image: url(./images/expect-bg.webp), linear-gradient(#010A20, #010A20);
+  background-image: url(./images/expect-bg.webp),
+    linear-gradient(var(--dark-color), var(--dark-color));
   background-size: cover;
   padding-top: 141px;
   padding-bottom: 255px;
@@ -437,19 +439,19 @@ body {
 .expect-title {
   color: var(--title-color);
   text-align: center;
-font-size: 42px;
-font-weight: 700;
-line-height: 119.048%; 
-max-width: 1056px;
-margin: 0 auto;
-margin-bottom: 70px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 119.048%;
+  max-width: 1056px;
+  margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .expect-image {
   width: 1056px;
-height: 594px;
-border-radius: 10px;
-margin: 0 auto;
+  height: 594px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .expect-list {
@@ -466,8 +468,8 @@ margin: 0 auto;
 
 .expect-country-image {
   width: 233px;
-height: 151px;
-border-radius: 5px;
+  height: 151px;
+  border-radius: 5px;
 }
 
 .expect-subtitle {
@@ -478,20 +480,139 @@ border-radius: 5px;
   margin-bottom: 15px;
 }
 
-.expect-text{
+.expect-text {
   color: rgb(255, 255, 255, 0.7);
-  font-feature-settings: 'clig' off, 'liga' off;
-font-size: 18px;
-font-weight: 400;
-line-height: 155.556%;
-letter-spacing: 0.5px;
-max-width: 334.629px;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 155.556%;
+  letter-spacing: 0.5px;
+  max-width: 334.629px;
 }
 
 .expect-item:last-child .expect-text {
-max-width: 323.657px;
+  max-width: 323.657px;
 }
 
 .expect-wrap {
   padding-top: 3px;
+}
+
+/* gallery */
+
+.gallery {
+  padding-top: 177px;
+  padding-bottom: 229px;
+}
+
+.gallery-title {
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 42px;
+}
+
+.gallery-text {
+  color:  #6F7787;
+  text-align: center;
+font-size: 18px;
+font-weight: 400;
+line-height: 155.556%; 
+letter-spacing: 0.18px;
+max-width: 511px;
+margin: 0 auto;
+}
+
+.gallery-img {
+  width: 370px;
+height: 530px;
+border-radius: 10px;
+}
+
+.gallery-item:nth-child(2) .gallery-img {
+  height: 210px;
+}
+
+.gallery-item:nth-child(3) .gallery-img {
+  height: 210px;
+}
+
+.gallery-item:nth-child(5) .gallery-img {
+  height: 370px;
+}
+
+.gallery-item:nth-child(6) .gallery-img {
+  height: 370px;
+}
+
+.gallery-list {
+  padding-top: 71px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+  max-height: 1000px;
+}
+
+/* travelling */
+
+.travelling {
+  background-color: #DCE8F2;
+}
+
+.travelling-title {
+  color: var(--dark-color);
+font-size: 60px;
+font-weight: 700;
+line-height: 150%; 
+}
+
+.travelling-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.travelling-number {
+  width: 58.687px;
+height: 58.687px;
+border-radius: 50%;
+background-color: var(--red-color);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.travelling-rectangle:nth-child(2) {
+  height: 220px;
+  width: 3px;
+  background-color: rgba(21, 20, 57, 0.4);
+}
+
+.travelling-rectangle:nth-child(4) {
+  height: 496px;
+  width: 3px;
+  background-color: rgba(21, 20, 57, 0.4);
+}
+
+.travelling-numb {
+  color: var(--title-color);
+font-size: 26.409px;
+font-weight: 500;
+line-height: 144.444%;  
+}
+
+
+.travelling-image {
+  max-width: 249.419px;
+  max-height: 165.79px;
+  object-fit: cover;
+  object-position: bottom;
 }

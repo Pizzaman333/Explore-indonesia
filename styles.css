@@ -424,3 +424,74 @@ body {
   margin-left: auto;
   margin-top: 36px;
 }
+
+/* expect */
+
+.expect {
+  background-image: url(./images/expect-bg.webp), linear-gradient(#010A20, #010A20);
+  background-size: cover;
+  padding-top: 141px;
+  padding-bottom: 255px;
+}
+
+.expect-title {
+  color: var(--title-color);
+  text-align: center;
+font-size: 42px;
+font-weight: 700;
+line-height: 119.048%; 
+max-width: 1056px;
+margin: 0 auto;
+margin-bottom: 70px;
+}
+
+.expect-image {
+  width: 1056px;
+height: 594px;
+border-radius: 10px;
+margin: 0 auto;
+}
+
+.expect-list {
+  padding-top: 125px;
+  display: flex;
+  gap: 75px;
+  justify-content: center;
+}
+
+.expect-item {
+  display: flex;
+  gap: 41px;
+}
+
+.expect-country-image {
+  width: 233px;
+height: 151px;
+border-radius: 5px;
+}
+
+.expect-subtitle {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+
+.expect-text{
+  color: rgb(255, 255, 255, 0.7);
+  font-feature-settings: 'clig' off, 'liga' off;
+font-size: 18px;
+font-weight: 400;
+line-height: 155.556%;
+letter-spacing: 0.5px;
+max-width: 334.629px;
+}
+
+.expect-item:last-child .expect-text {
+max-width: 323.657px;
+}
+
+.expect-wrap {
+  padding-top: 3px;
+}

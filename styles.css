@@ -5,6 +5,10 @@
   --dark-color: #010a20;
 }
 
+*:focus {
+  /* outline: none; */
+}
+
 body {
   font-family: "DM Sans";
 }
@@ -40,11 +44,27 @@ body {
   fill: var(--title-color);
 }
 
+.logo:hover {
+  fill: var(--red-color);
+}
+
+.logo-link:focus .logo{
+  fill: var(--red-color);
+}
+
 .header-link {
   color: var(--title-color);
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.header-link:hover {
+  color: var(--red-color);
+}
+
+.header-link:focus {
+  color: var(--red-color);
 }
 
 .header-list {
@@ -59,6 +79,26 @@ body {
 
 .menu-icon {
   fill: var(--title-color);
+}
+
+.search-icon:hover {
+  cursor: pointer;
+  fill: var(--red-color);
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+  fill: var(--red-color);
+}
+
+.icon-link:focus .search-icon{
+  cursor: pointer;
+  fill: var(--red-color);
+}
+
+.icon-link:focus .menu-icon{
+  cursor: pointer;
+  fill: var(--red-color);
 }
 
 .header-icons {
@@ -129,6 +169,16 @@ body {
   background: var(--red-color);
   width: 271px;
   height: 82px;
+}
+
+.hero-button:hover {
+  background-color: var(--title-color);
+  color: var(--dark-color);
+}
+
+.hero-button:focus {
+  background-color: var(--title-color);
+  color: var(--dark-color);
 }
 
 .hero-wrap {

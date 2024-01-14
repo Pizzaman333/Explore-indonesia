@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <a href="#top" class="up-link">
+      <div class="arrow-up-cirkle">
+      <svg class="up-arrow" width="37.131px" height="21.131px">
+        <use href="./images/icons.svg#icon-up-arrow"></use>
+      </svg>
+    </div>
+    </a>
     <header class="header-hero">
       <div class="container">
         <div class="header">
@@ -31,16 +38,16 @@
           </a>
           <ul class="header-list">
             <li class="header-item">
-              <a href="" class="header-link">destinations</a>
+              <a href="#locations" class="header-link">destinations</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link">experiences</a>
+              <a href="#secrets" class="header-link">experiences</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link">about</a>
+              <a href="#travelling" class="header-link">about</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link">gallery</a>
+              <a href="#gallery" class="header-link">gallery</a>
             </li>
           </ul>
           <ul class="header-icons">
@@ -56,7 +63,7 @@
                 ><svg class="menu-icon" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
-                </a>
+              </a>
             </li>
           </ul>
         </div>
@@ -79,11 +86,11 @@
             </div>
           </div>
           <div class="hero-articles-wrap">
-            <!-- <ul class="smth-list">
+            <ul class="smth-list">
               <li class="smth-item">Fb</li>
               <li class="smth-item">In</li>
               <li class="smth-item">Tw</li>
-            </ul> -->
+            </ul>
             <ul class="hero-list">
               <li class="hero-article">
                 <p class="hero-article-number">01</p>
@@ -112,12 +119,18 @@
               alt="picture"
               class="hero-image"
             />
+            <div class="play-cirkle">
+              <svg class="play-icon" width="44.023px"
+              height="44px">
+                <use href="./images/icons.svg#icon-play-arrow"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="locations">
+      <section class="locations" id="locations">
         <div class="container">
           <article class="locations-article">
             <img
@@ -138,6 +151,7 @@
           </article>
           <article class="locations-article">
             <div class="locations-wrap">
+              <a href="" class="soc-link"> </a>
               <h3 class="locations-title">
                 Perfect beaches exude relaxation and fun
               </h3>
@@ -155,13 +169,15 @@
           </article>
         </div>
       </section>
-      <section class="secrets">
+      <section class="secrets" id="secrets">
         <div class="container">
           <h2 class="secrets-title">Explore Our Secrets</h2>
           <div class="secrets-wrap">
-            <svg class="secrets-arrow" width="14.677px" height="23.906px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
+            <div class="arrow-circle">
+              <svg class="secrets-arrow" width="14.677px" height="23.906px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
             <ul class="secrets-list">
               <li class="secrets-item">
                 <img
@@ -185,9 +201,11 @@
                 />
               </li>
             </ul>
-            <svg class="secrets-arrow" width="14.677px" height="23.906px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
+            <div class="arrow-circle">
+              <svg class="secrets-arrow" width="14.677px" height="23.906px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
           </div>
           <ul class="secrets-circles">
             <li class="secrets-cirkle"></li>
@@ -285,7 +303,7 @@
           </ul>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <h2 class="gallery-title">Photo Gallery</h2>
         <p class="gallery-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -312,7 +330,7 @@
           </li>
         </ul>
       </section>
-      <section class="travelling">
+      <section class="travelling" id="travelling">
         <div class="container travelling-wrap">
           <h2 class="travelling-title">Getting there</h2>
           <ul class="travelling-lists">
@@ -409,19 +427,33 @@
         </ul>
         <ul class="soc-list">
           <li class="soc-item">
-            <svg class="soc-icon" width="24px" height="24px">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
+            <a
+              href="https://www.facebook.com/"
+              class="soc-link"
+              target="_blank"
+            >
+              <svg class="soc-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="soc-item">
-            <svg class="soc-icon" width="24px" height="24px">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
+            <a
+              href="https://www.linkedin.com/"
+              class="soc-link"
+              target="_blank"
+            >
+              <svg class="soc-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
           <li class="soc-item">
-            <svg class="soc-icon" width="24px" height="24px">
-              <use href="./images/icons.svg#icon-google"></use>
-            </svg>
+            <a href="https://www.google.com" class="soc-link" target="_blank">
+              <svg class="soc-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-google"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <p class="footer-rights">Copyright © 2019</p>
